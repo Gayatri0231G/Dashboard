@@ -5,7 +5,6 @@ import { FaEdit, FaLock, FaCcMastercard } from "react-icons/fa";
 const PaymentPage = () => {
   return (
     <div className="payment-container">
-      {/* Left Section - Payment Form */}
       <div className="payment-form">
         <div className="header">
           <h2 className="logo">AceCoin<span>Pay</span></h2>
@@ -57,7 +56,6 @@ const PaymentPage = () => {
         </div>
       </div>
 
-      {/* Right Section - Card Summary */}
       <div className="card-summary">
         <div className="card">
           <div className="chip"></div>
