@@ -1,5 +1,6 @@
 import React from "react";
 import "./PaymentForm.css";
+import { FaGripLines } from "react-icons/fa";
 import { FaEdit, FaLock, FaCcMastercard } from "react-icons/fa";
 
 const PaymentPage = () => {
@@ -14,25 +15,26 @@ const PaymentPage = () => {
         </div>
 
         <div className="form">
-          <div className="input-group">
+          <div className="input-group1">
             <label>Card Number</label>
             <p className="sub-text">Enter the 16-digit card number on the card</p>
-            <div className="input-box">
+            <div className="input-box1">
               <FaCcMastercard className="icon" />
-              <input type="text" value="2412 - 7512 - 3412 - 3456" disabled />
+              <input type="text" value="2412   -   7512   -   3412   -   3456" disabled />
               <FaEdit className="edit-icon" />
             </div>
           </div>
 
-          <div className="input-group">
-            <label>CVV Number</label>
-            <p className="sub-text">Enter the 3 or 4 digit number on the card</p>
-            <div className="input-box">
-              <input type="text" value="327" disabled />
-              <FaLock className="icon" />
+          <div className="cvv-container">
+            <div className="cvv-info">
+              <label className="cvv-label">CVV Number</label>
+              <p className="cvv-subtext">Enter the 3 or 4 digit number on the card</p>
+            </div>
+            <div className="cvv-input-box">
+              <input type="text" value="327" disabled className="cvv-input" />
+              <FaGripLines className="cvv-icon" />
             </div>
           </div>
-
           <div className="input-group expiry-group">
             <label>Expiry Date</label>
             <p className="sub-text">Enter the expiration date of the card</p>

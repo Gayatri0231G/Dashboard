@@ -1,7 +1,7 @@
 .payment-container {
   display: flex;
   justify-content: space-between;
-  width: 700px;
+  width: 800px;
   background: white;
   padding: 25px;
   border-radius: 12px;
@@ -25,7 +25,7 @@
 }
 
 .logo span {
-  color: #777;
+  color: #969595;
 }
 
 .timer {
@@ -42,21 +42,84 @@
   margin-top: 20px;
 }
 
-.input-group {
+.input-group1 {
   margin-bottom: 15px;
 }
 
 label {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 800;
   color: #333;
   display: block;
 }
 
 .sub-text {
   font-size: 12px;
-  color: #777;
+  color: #969595;
   margin-bottom: 5px;
+}
+.input-box1 {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e6e5e5
+}
+.input-box1 input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  font-size: 15px;
+  color: #aaa6a6;
+}
+
+.cvv-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.cvv-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cvv-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.cvv-subtext {
+  font-size: 12px;
+  color: #777;
+}
+
+.cvv-input-box {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 200px;
+  justify-content: space-between;
+  border: 1px solid #e6e5e5
+}
+
+.cvv-input {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  text-align: center;
+  width: 30px;
+}
+
+.cvv-icon {
+  color: #777;
 }
 
 .input-box {
@@ -65,13 +128,15 @@ label {
   background: #f7f7f7;
   padding: 10px;
   border-radius: 8px;
+  border: 1px solid #e6e5e5
 }
 
 .input-box input {
   border: none;
   background: transparent;
   flex: 1;
-  font-size: 16px;
+  font-size: 15px;
+  color: #aaa6a6;
 }
 
 .icon {
@@ -114,7 +179,7 @@ label {
   margin-top: 10px;
 }
 
-/* Right Section - Card Summary */
+
 .card-summary {
   width: 35%;
   background: #f7f7f7;
