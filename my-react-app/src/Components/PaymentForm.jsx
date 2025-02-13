@@ -1,7 +1,11 @@
 import React from "react";
 import "./PaymentForm.css";
 import { FaGripLines } from "react-icons/fa";
-import { FaEdit, FaLock, FaCcMastercard } from "react-icons/fa";
+import { FaGripVertical } from "react-icons/fa6";
+import { FaEdit, FaCcMastercard } from "react-icons/fa";
+import { FaWifi, FaApple } from "react-icons/fa6"; 
+import { BsCreditCard2BackFill } from "react-icons/bs"; 
+
 
 const PaymentPage = () => {
   return (
@@ -19,9 +23,9 @@ const PaymentPage = () => {
             <label>Card Number</label>
             <p className="sub-text">Enter the 16-digit card number on the card</p>
             <div className="input-box1">
-              <FaCcMastercard className="icon" />
+              <FaCcMastercard className="icons" />
               <input type="text" value="2412   -   7512   -   3412   -   3456" disabled />
-              <FaEdit className="edit-icon" />
+              <FaEdit className="edit-icons" />
             </div>
           </div>
 
@@ -35,22 +39,31 @@ const PaymentPage = () => {
               <FaGripLines className="cvv-icon" />
             </div>
           </div>
-          <div className="input-group expiry-group">
-            <label>Expiry Date</label>
-            <p className="sub-text">Enter the expiration date of the card</p>
-            <div className="expiry-box">
-              <input type="text" value="09" disabled />
-              <span>/</span>
-              <input type="text" value="22" disabled />
+          
+          <div className="section">
+            <div className="text">
+              <label className="label">Expiry Date</label>
+              <p className="subtext">Enter the expiration date of the card</p>
+            </div>
+            <div className="expiry-input-box">
+              <div className="input-box">
+                <input type="text" value="09" disabled className="input" />
+              </div>
+              <span className="separator">/</span>
+              <div className="input-box">
+                <input type="text" value="22" disabled className="input selected" />
+              </div>
             </div>
           </div>
 
-          <div className="input-group">
-            <label>Password</label>
-            <p className="sub-text">Enter your Dynamic password</p>
-            <div className="input-box">
-              <input type="password" value="••••••••" disabled />
-              <FaLock className="icon" />
+          <div className="section">
+            <div className="text">
+              <label className="label">Password</label>
+              <p className="subtext">Enter your Dynamic password</p>
+            </div>
+            <div className="password-box">
+              <input type="password" value="••••••••" disabled className="password-input" />
+              <FaGripVertical className="icon" />
             </div>
           </div>
 
@@ -60,26 +73,43 @@ const PaymentPage = () => {
 
       <div className="card-summary">
         <div className="card">
-          <div className="chip"></div>
-          <p className="cardholder">Jonathan Michael</p>
-          <p className="card-number">**** **** **** 3456</p>
-          <p className="expiry">09/22</p>
-          <FaCcMastercard className="mastercard-icon" />
+          <div className="card-header">
+          <BsCreditCard2BackFill className="card-chip" />
+          <FaWifi className="wifi-icon" />
         </div>
-
-        <div className="summary">
-          <p><strong>Company:</strong> <span>Apple</span></p>
-          <p><strong>Order Number:</strong> <span>1266201</span></p>
-          <p><strong>Product:</strong> <span>MacBook Air</span></p>
-          <p><strong>VAT (20%):</strong> <span>$100.00</span></p>
-        </div>
-
-        <div className="total">
-          <p>You have to Pay</p>
-          <h3>$549.99 <span>USD</span></h3>
+        <div className="card-details">
+          <p className="card-holder">Jonathan Michael</p>
+          <p className="card-number">•••• 3456</p>
+          <p className="card-expiry">09/22</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="mastercard-logo" />
         </div>
       </div>
+
+      <div className="payment-summary">
+        <div className="summary-item">
+          <span>Company</span>
+          <span><FaApple className="apple-icon" /> Apple</span>
+        </div>
+        <div className="summary-item">
+          <span>Order Number</span>
+          <span>1266201</span>
+        </div>
+        <div className="summary-item">
+          <span>Product</span>
+          <span>MacBook Air</span>
+        </div>
+        <div className="summary-item">
+          <span>VAT (20%)</span>
+          <span>$100.00</span>
+        </div>
+      </div>
+
+      <div className="payment-total">
+        <p>You have to Pay</p>
+        <h2>549.99 <span>USD</span></h2>
+      </div>
     </div>
+  </div>
   );
 };
 
