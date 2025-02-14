@@ -246,7 +246,7 @@ label {
   margin-right: px;
 }
 
-.card {
+/* .card {
   background: white;
   border-radius: 15px;
   padding: 15px;
@@ -325,4 +325,103 @@ label {
 .payment-total h2 {
   margin: 5px 0;
   color: #333;
+} */
+.card {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  border-radius: 15px;
+  padding: 15px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-chip {
+  font-size: 20px;
+}
+
+.wifi-icon {
+  font-size: 16px;
+}
+
+.card-details {
+  text-align: left;
+  font-size: 14px;
+  color: #444;
+}
+
+.card-holder {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card-number {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-expiry {
+  font-size: 14px;
+  color: gray;
+}
+
+.mastercard-logo {
+  width: 40px;
+}
+
+/* Payment Summary */
+.payment-summary {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+}
+
+.apple-icon {
+  color: black;
+  font-size: 14px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Payment Total */
+.payment-total {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.payment-total h2 {
+  margin: 5px 0;
+  color: #333;
+  font-size: 22px;
+}
+
+.payment-total span {
+  font-size: 14px;
+  color: gray;
 }
