@@ -72,88 +72,50 @@ const PaymentPage = () => {
       </div>
 
       <div className="card-summary">
-        {/* <div className="card">
+        <div className="card">
           <div className="card-header">
-          <BsCreditCard2BackFill className="card-chip" />
-          <FaWifi className="wifi-icon" />
+            <BsCreditCard2BackFill className="card-chip" />
+            <FaWifi className="wifi-icon" />
+          </div>
+          <div className="card-details">
+            <p className="card-holder">Jonathan Michael</p>
+            <p className="card-number">•••• 3456</p>
+          </div>
+          <div className="card-footer">
+            <p className="card-expiry">09/22</p>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+              alt="Mastercard"
+              className="mastercard-logo"
+            />
+          </div>
         </div>
-        <div className="card-details">
-          <p className="card-holder">Jonathan Michael</p>
-          <p className="card-number">•••• 3456</p>
-          <p className="card-expiry">09/22</p>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="mastercard-logo" />
+        <div className="payment-summary">
+          <div className="summary-item">
+            <span>Company</span>
+            <span><FaApple className="apple-icon" /></span>
+            <span className="bold">Apple</span> 
+          </div>
+          <div className="summary-item">
+            <span>Order Number</span>
+            <span className="bold">1266201</span>
+          </div>
+          <div className="summary-item">
+            <span>Product</span>
+            <span className="bold">MacBook Air</span>
+          </div>
+          <div className="summary-item">
+            <span>VAT (20%)</span>
+            <span className="bold">$100.00</span>
+          </div>
         </div>
-      </div> */}
 
-      {/* <div className="payment-summary">
-        <div className="summary-item">
-          <span>Company</span>
-          <span><FaApple className="apple-icon" /> Apple</span>
+        <div className="payment-total">
+          <p>You have to Pay</p>
+          <h2>549<span>.99 USD</span></h2>
         </div>
-        <div className="summary-item">
-          <span>Order Number</span>
-          <span>1266201</span>
-        </div>
-        <div className="summary-item">
-          <span>Product</span>
-          <span>MacBook Air</span>
-        </div>
-        <div className="summary-item">
-          <span>VAT (20%)</span>
-          <span>$100.00</span>
-        </div>
-      </div>
-
-      <div className="payment-total">
-        <p>You have to Pay</p>
-        <h2>549.99 <span>USD</span></h2>
-      </div> */}
-       <div className="card">
-        <div className="card-header">
-          <BsCreditCard2BackFill className="card-chip" />
-          <FaWifi className="wifi-icon" />
-        </div>
-        <div className="card-details">
-          <p className="card-holder">Jonathan Michael</p>
-          <p className="card-number">•••• 3456</p>
-        </div>
-        <div className="card-footer">
-          <p className="card-expiry">09/22</p>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
-            alt="Mastercard"
-            className="mastercard-logo"
-          />
-        </div>
-      </div>
-
-      {/* Payment Details */}
-      <div className="payment-summary">
-        <div className="summary-item">
-          <span>Company</span>
-          <span><FaApple className="apple-icon" /> Apple</span>
-        </div>
-        <div className="summary-item">
-          <span>Order Number</span>
-          <span>1266201</span>
-        </div>
-        <div className="summary-item">
-          <span>Product</span>
-          <span className="bold">MacBook Air</span>
-        </div>
-        <div className="summary-item">
-          <span>VAT (20%)</span>
-          <span className="bold">$100.00</span>
-        </div>
-      </div>
-
-      {/* Payment Total */}
-      <div className="payment-total">
-        <p>You have to Pay</p>
-        <h2>549.99 <span>USD</span></h2>
       </div>
     </div>
-  </div>
   );
 };
 
